@@ -2,46 +2,53 @@
 <html lang="fr" dir="ltr">
 <head>
   <meta charset="utf-8"/>
+  <meta name="viewport" content="width-device-width, initial-scale-1">
+  <!-- meta viewport que cela soit visible sur tout les moteurs de recherche -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
   <title>Bootstrap Exercice 7</title>
 </head>
 <body>
-  <div class="container" style="width:30rem">
-    <div class="card text-center">
-      <div class="card-body">
-        <h1 class= "lead font-weight-bold"card-title">La Manu Amiens</h1>
-        <p class= display-2"card-text">l'Ecole des métiers du Numérique</p>
-        <!-- Le bouton de ma modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#info">
-          + d'infos
-        </button>
-      </div>
-      <!-- Mettre un nom PRECIS et CLAIR à data-target, il nous dirigera va la page concernée -->
-      <!-- Ma modal -->
-      <!-- remettre le nom donné à data-target dans l'id qu'on a ajouté -->
-      <div class="modal" id="info" tabindex="-1" role="dialog" aria-labelledby="info" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="information">La Manu Amiens</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-              <!--&time represente la croix de fermeture en haut à droite-->
+  <div class="container">
+    <div class="row">
+      <div class="col-8 offset-2">
+        <div class="container" style="width:30rem">
+        </div>
+        <div class="card text-center">
+          <div class="card-body">
+            <h1 class= "lead font-weight-bold"card-title">La Manu Amiens</h1>
+            <p class= display-2"card-text">L'Ecole des métiers du Numérique</p>
+            <!-- Le bouton de ma modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#info">
+              + d'infos
             </button>
           </div>
-          <div class="modal-body bg-primary text-white">
-            <a href="https://lamanu.fr/"><h3 class="text-white">https://lamanu.fr/</h3></a>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        <!-- Mettre un nom PRECIS et CLAIR à data-target, il nous dirigera va la page concernée -->
+        <!-- Ma modal -->
+        <!-- remettre le nom donné à data-target dans l'id qu'on a ajouté -->
+        <div class="modal" id="info" tabindex="-1" role="dialog" aria-labelledby="info" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="information">La Manu Amiens</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">X
+                  <span aria-hidden="true">&times;</span>
+                  <!--&time represente la croix de fermeture en haut à droite-->
+                </button>
+              </div>
+              <div class="modal-body bg-primary text-white">
+                <a href="https://lamanu.fr/"><h3 class="text-white text-center">https://lamanu.fr/</h3></a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- script de bootstrap toujours à la fin de body -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-</html>
+      <!-- script de bootstrap toujours à la fin de body -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+    </html>
